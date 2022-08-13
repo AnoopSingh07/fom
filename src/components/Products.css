@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#products>div{
+    height:500px;
+    width: 30%;
+    margin: 21px;
+}
+
+#products>div>img{
+    width: 100%;
+    height: 94%;
+    border-radius: 11px;
+    box-shadow: 1px 2px 4px 0 rgb(139, 139, 139);
+}
+#products>div>p{
+    text-align: center;
+    font-family: 'Tiro Bangla', serif;
+    background-color: #d4d4d4;
+    box-shadow: 1px 2px 4px 0 rgb(147, 147, 147);
+    border-radius: 4px;
+    padding: 8px;
+    margin: 7px 0;;
+}
+
+#products>div>p:hover{
+    cursor: pointer;
+    background-color: #9b9b9b;
+}
+
+

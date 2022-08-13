@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&family=Roboto+Mono:ital,wght@1,100&family=Roboto:ital@1&family=Tiro+Bangla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#header {
+    background-color: rgb(41 33 48);
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+
+#navid {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4px;
+    width: 70%;
+    margin-left: 1%;
+    height: fit-content;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    margin: 3px 10px;
+}
+
+.navitem {
+    color: whitesmoke;
+    padding: 4px 7px;
+    font-family: 'Tiro Bangla', serif;
+    border: 1.6px solid #292130;
+    border-radius: 9px;
+    text-shadow: 1px 2px 7px #de9632;
+}
+
+.navitem:hover {
+    color: wheat;
+    border: 1.6px solid wheat;
+    border-radius: 9px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.hamburger {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    filter: invert(100%);
+    display: none;
+}
+
+.hamdiv {
+    display: none;
+    width: 2%;
+    padding: 8px;
+
+}
+
+.home {
+    font-size: 21px;
+}
+
+.headingbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.centerContent {
+    margin: auto auto;
+    width: max-content;
+}
+
+@media only screen and (max-width: 1010px) {
+
+    .hamdiv {
+        display: flex;
+    }
+
+    #navid{
+        display: none;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+}
+
+/* for search bar */
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+    width: 342px;
+}
+
+.searchBox {
+    padding: 0px 12px;
+    margin-right: 3px;
+    margin-left: 20px;
+    width: 64%;
+    box-shadow: 1px 2px 3px 1px #624abae8;
+    background-color: #f5f5f5c9;
+    outline: none;
+    border: none;
+    font-family: 'Tiro Bangla', serif;
+    font-size: 17px;
+    border-radius: 14px;
+}
+
+.searchBox::placeholder {
+    color: #292130e3;
+}
+
+.searchdiv {
+    width: 20px;
+
+}
+
+#searchButton {
+    background: none;
+    border: none;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.searchIcon {
+    font-size: 24px;
+    color: #f5f5f5c9;
+}
+
+@media only screen and (max-width: 1010px) {
+
+    .searchBar {
+        padding: 4px 0;
+    }
+
+    .searchBox {
+        padding: 0 4px;
+        margin-right: 1px;
+        margin-left: 10px;
+        width: 65%;
+        font-size: 11px;
+        border-radius: 11px;
+    }
+
+    .searchdiv {
+        width: 17px;
+
+    }
+
+    #searchButton {
+        padding-left: 3px;
+    }
+
+    .searchIcon {
+        font-size: 21px;
+    }
+
+}
+
+#logo{
+    width: 2%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#poster{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#posterimg{
+    border-radius: 11px;
+    box-shadow: 1px 2px 4px 0 rgb(139, 139, 139);
+}
