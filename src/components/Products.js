@@ -8,10 +8,6 @@ let srcs=[
         name:"Meditation Chair"
     },
     {
-        img:"https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/213cece81b3019ecd7daf3eb0eaea030.w3900.h2600._CR650%2C0%2C2600%2C2600_SX960_SY960_.jpg",
-        name:"Meditation Chair"
-    },
-    {
         img:"https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/a/AmazonStores/A21TJRUUN4KGV/056c60cda419ecbd82194a91572e4909.w3467.h2311._CR969%2C0%2C2311%2C2311_SX960_SY960_.jpg",
         name:"Meditation Cushions"
     }, {
