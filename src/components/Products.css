@@ -9,14 +9,14 @@
 
 
 #products>div{
-    height:500px;
-    width: 30%;
+    height:max(300px,30%);
+    width:max(300px,30%);
     margin: 21px;
 }
 
 #products>div>img{
-    width: 100%;
-    height: 94%;
+    width:100%;
+    height:42.5vh;
     border-radius: 11px;
     box-shadow: 1px 2px 4px 0 rgb(139, 139, 139);
 }

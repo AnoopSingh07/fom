@@ -3,26 +3,26 @@ import { Link } from "react-router-dom";
 import './Header.css';
 
 
-const togglemenu = () => {
-    let navId = document.getElementById("navid");
-    if (navId.style["display"] === "none") {
-        navId.style["display"] = "flex";
-        navId.style["height"] = "127px";
-        navId.style["transition"] = "2s";
-    }
-    else {
-        navId.style["display"] = "none";
-        navId.style["height"] = "0px";
-        navId.style["transition"] = "2s";
-    }
-};
+// const togglemenu = () => {
+//     let navId = document.getElementById("navid");
+//     if (navId.style["display"] === "none") {
+//         navId.style["display"] = "flex";
+//         navId.style["height"] = "127px";
+//         navId.style["transition"] = "2s";
+//     }
+//     else {
+//         navId.style["display"] = "none";
+//         navId.style["height"] = "0px";
+//         navId.style["transition"] = "2s";
+//     }
+// };
 
 const Header = () => {
 
     return (
         <>
             < div id="header" >
-                <div id="hamid" className="hamdiv" onClick={togglemenu}><i className="hamburger fa-solid fa-bars"></i></div>
+                {/* <div id="hamid" className="hamdiv" onClick={togglemenu}><i className="hamburger fa-solid fa-bars"></i></div> */}
                 <nav id="navid">
                     <ul>
                         <li><Link className="navitem" to="/"><i className="fa-solid fa-house "></i></Link></li>
@@ -35,7 +35,7 @@ const Header = () => {
                         <button id="searchButton"><i className=" searchIcon fa-solid fa-magnifying-glass" /></button>
                     </div>
                 </nav>
-                <img id="logo" src="https://d1fdloi71mui9q.cloudfront.net/up0uDQQoOByZCfQzrygQ_ayAm28UhmZx9VgcM" alt="logo" />
+                {/* <img id="logo" src="https://d1fdloi71mui9q.cloudfront.net/up0uDQQoOByZCfQzrygQ_ayAm28UhmZx9VgcM" alt="logo" /> */}
             </div >
         </>
 

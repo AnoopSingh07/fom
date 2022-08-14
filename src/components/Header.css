@@ -18,11 +18,10 @@
 
 
 #navid {
+    padding: 5px 10px;
     display: flex;
     justify-content: flex-start;
-    padding: 4px;
-    width: 70%;
-    margin-left: 1%;
+    width: 100%;
     height: fit-content;
 }
 
@@ -43,6 +42,7 @@ ul li {
     border: 1.6px solid #292130;
     border-radius: 9px;
     text-shadow: 1px 2px 7px #de9632;
+    white-space: nowrap;
 }
 
 .navitem:hover {
@@ -87,7 +87,7 @@ ul li a {
     width: max-content;
 }
 
-@media only screen and (max-width: 1010px) {
+/* @media only screen and (max-width: 1010px) {
 
     .hamdiv {
         display: flex;
@@ -101,15 +101,15 @@ ul li a {
         flex-direction: column;
     }
 
-}
-
+} */
 /* for search bar */
 
 .searchBar {
+    position:absolute;
+    right:0px;
     display: flex;
     justify-content: center;
-    padding: 6px 0;
-    width: 342px;
+    width: 30vw;
 }
 
 .searchBox {
@@ -148,33 +148,14 @@ ul li a {
 }
 
 @media only screen and (max-width: 1010px) {
-
-    .searchBar {
-        padding: 4px 0;
-    }
-
     .searchBox {
         padding: 0 4px;
         margin-right: 1px;
         margin-left: 10px;
         width: 65%;
-        font-size: 11px;
+        font-size: 12px;
         border-radius: 11px;
     }
-
-    .searchdiv {
-        width: 17px;
-
-    }
-
-    #searchButton {
-        padding-left: 3px;
-    }
-
-    .searchIcon {
-        font-size: 21px;
-    }
-
 }
 
 #logo{
@@ -184,12 +165,22 @@ ul li a {
 }
 
 #poster{
-    padding: 3px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
+    align-items: center;
+    width:100%;
 }
-#posterimg{
+#poster{
+    --poster-gap:7px;
+    transition: margin 700ms;
+}
+#poster>img{
+    width:calc(100% - (2 * var(--poster-gap)));
+    margin:var(--poster-gap) 0px;
     border-radius: 11px;
     box-shadow: 1px 2px 4px 0 rgb(139, 139, 139);
+}
+#poster:active{
+    filter:brightness(1.2);
 }
